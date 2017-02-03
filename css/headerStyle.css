@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:rgb(241,241,241);
+	}
+.bg{
+	width:1000px;
+	margin:auto;
+	background:#FFF url(../images/bg.png) no-repeat;
+	position:relative;
+	}
+.content{
+	width:1000px;
+	height:600px;
+	}
+/*头部文字样式*/
+header{
+	width:1000px;
+	margin:auto;
+	margin-left:580px;
+	padding:20px 0 30px 0;
+	}
+header p{
+	margin-top:30px;
+	color:#FFF;
+	text-shadow:#000 1px 1px 1px;
+	-webkit-transition: all 3s; -moz-transition: all 3s; -o-transition: all 3s; transition: all 3s; 
+	}
+/*文字动画*/
+header p span{
+	
+	}
+header p:hover{
+	padding-left:20px;
+	}
+	
+/*左边导航栏样式*/
+.navbar{
+	position:absolute;
+	left:100px;
+	top:250px;
+	}
+.navbar li{
+	font-size:18px;
+	font-weight:bolder; 
+	height:30px;
+	text-shadow:#9F9FFF 1px 1px 1px;
+	}
+/*时间轴样式*/
+.header-nav{
+	width:830px;
+	margin-left:170px;
+	margin-top:30px;
+	float:left;
+	position:relative;
+	}
+.time-bar{
+	width:830px;
+	height:5px;
+	background:#0CF;
+	border-radius:2.5px;
+	}
+.header-nav li{
+	display:block;
+	position:relative;
+	float:left;
+	width:25%;
+	}
+.dateview{
+	position:absolute;
+	text-align:center;
+	left:20px;
+	top:-50px;
+	width:88px;
+	height:46px;
+	background:url(../images/dtime.png);
+	}
+/*文字动画*/
