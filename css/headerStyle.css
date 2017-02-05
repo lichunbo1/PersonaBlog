@@ -5,52 +5,100 @@ body{
 	}
 .bg{
 	width:1000px;
-	margin:auto;
+	margin:0 auto;
 	background:#FFF url(../images/bg.png) no-repeat;
 	position:relative;
 	}
 .content{
 	width:1000px;
-	height:600px;
 	}
 /*头部文字样式*/
 header{
 	width:1000px;
-	margin:auto;
-	margin-left:580px;
-	padding:20px 0 30px 0;
+	margin-left:620px;
+	padding:50px 0 30px 0;
 	}
+/*头部文字动画*/
 header p{
-	margin-top:30px;
+	margin-top:20px;
 	color:#FFF;
-	text-shadow:#000 1px 1px 1px;
-	-webkit-transition: all 3s; -moz-transition: all 3s; -o-transition: all 3s; transition: all 3s; 
+	text-shadow: #000000 1px 1px 1px;
+	-webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s;
+	-webkit-transform: translate(-40px); -moz-transform: translate(-40px); -o-transform: translate(-40px); -ms-transform: translate(-40px); transform: translate(-40px);
+		  }
+header p:hover{  padding-left:20px;  }
+header p:nth-child(1){-webkit-animation:txtanimitions 3s ease-out 0s; -moz-animation:txtanimitions 3s ease-out 0s; -o-animation: txtanimitions 3s ease-out 0s; animation: txtanimitions 3s ease-out 0s;}
+header p:nth-child(2){-webkit-animation:txtanimitions 3s ease-out 3s; -moz-animation:txtanimitions 3s ease-out 3s; -o-animation: txtanimitions 3s ease-out 3s; animation: txtanimitions 3s ease-out 3s;}
+header p:nth-child(3){-webkit-animation:txtanimitions 3s ease-out 6s; -moz-animation:txtanimitions 3s ease-out 6s; -o-animation: txtanimitions 3s ease-out 6s; animation: txtanimitions 3s ease-out 6s;}
+
+@keyframes txtanimitions
+{
+	0%{transform: translate(0);
+		opacity:0;
 	}
-/*文字动画*/
-header p span{
-	
-	}
-header p:hover{
-	padding-left:20px;
-	}
-	
-/*左边导航栏样式*/
-.navbar{
-	position:absolute;
-	left:100px;
-	top:250px;
-	}
-.navbar li{
-	font-size:18px;
-	font-weight:bolder; 
-	height:30px;
-	text-shadow:#9F9FFF 1px 1px 1px;
-	}
+	50%{transform: translate(-20px);opacity:.5;}
+	100%{transform: translate(-40px);opacity:1;}
+}
+@-moz-keyframes txtanimitions /* Firefox */
+{
+	0%{-moz-transform: translate(0);opacity:0;}
+	50%{-moz-transform: translate(-20px);opacity:.5;}
+	100%{-moz-transform: translate(-40px);opacity:1;}
+}
+@-webkit-keyframes txtanimitions /* Safari 和 Chrome */
+{
+	0%{-webkit-transform: translate(0);opacity:0;}
+	50%{-webkit-transform: translate(-20px);opacity:.5;}
+	100%{-webkit-transform: translate(-40px);opacity:1;}
+}
+@-o-keyframes txtanimitions /* Opera */
+{
+	0%{-o-transform: translate(0);opacity:0;}
+	50%{-o-transform: translate(-20px);opacity:.5;}
+	100%{-o-transform: translate(-40px);opacity:1;}
+}
+/*时间条动画*/
+.time-bar{
+	-webkit-animation: mymove 3s ease-out; -moz-animation: mymove 3s ease-out; -o-animation: mymove 3s ease-out; animation: mymove 3s ease-out;
+}
+@keyframes mymove
+{
+	0%   {width:0;}
+	25%  {width:200px;}
+	50%  {width:400px;}
+	75%  {width:600px;}
+	100% {width:800px;}
+}
+@-moz-keyframes mymove /* Firefox */
+{
+	0%   {width:0;}
+	25%  {width:200px;}
+	50%  {width:400px;}
+	75%  {width:600px;}
+	100% {width:800px;}
+}
+@-webkit-keyframes mymove /* Safari 和 Chrome */
+{
+	0%   {width:0;}
+	25%  {width:200px;}
+	50%  {width:400px;}
+	75%  {width:600px;}
+	100% {width:800px;}
+}
+@-o-keyframes mymove /* Opera */
+{
+	0%   {width:0;}
+	25%  {width:200px;}
+	50%  {width:400px;}
+	75%  {width:600px;}
+	100% {width:800px;}
+}
+
 /*时间轴样式*/
 .header-nav{
 	width:830px;
 	margin-left:170px;
-	margin-top:30px;
+	margin-top:50px;
 	float:left;
 	position:relative;
 	}
@@ -60,19 +108,55 @@ header p:hover{
 	background:#0CF;
 	border-radius:2.5px;
 	}
-.header-nav li{
+.header-nav ul li::before { content: ""; width: 14px; height: 14px; border-radius: 50%; position: absolute; background: #f8e0d3; border: 3px solid #2a7497; }
+.header-nav ul li:hover::before{
+	background: #00CCFF;
+}
+.header-nav ul li a{margin-top:30px; display: block; color: #333;}
+.header-nav li:nth-child(1){
 	display:block;
-	position:relative;
-	float:left;
-	width:25%;
-	}
+	position:absolute;
+	top:-8px;
+	left: 20px
+}
+.header-nav li:nth-child(2){
+	display:block;
+	position:absolute;
+	top:-8px;
+	left:207px
+}
+.header-nav li:nth-child(3){
+	display:block;
+	position:absolute;
+	top:-8px;
+	left: 414px
+}
+.header-nav li:nth-child(4){
+	display:block;
+	position:absolute;
+	top:-8px;
+	left:620px
+}
 .dateview{
 	position:absolute;
 	text-align:center;
+	line-height:30px;
 	left:20px;
 	top:-50px;
 	width:88px;
 	height:46px;
 	background:url(../images/dtime.png);
 	}
+/*左边导航栏样式*/
+.navbar{
+	position:absolute;
+	left:100px;
+	top:300px;
+}
+.navbar li{
+	font-size:18px;
+	font-weight:bolder;
+	height:30px;
+	text-shadow:#9F9FFF 1px 1px 1px;
+}
 /*文字动画*/
