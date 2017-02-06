@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>京东注册页面</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="js/js.js" type="text/javascript"></script>
+</head>
+
+<body onload="code()">
+<div>
+<div class="header">
+  <div class="logo-left"> <a href="http://www.jd.com" class="logo"></a>
+    <div class="register">欢迎注册</div>
+  </div>
+  <div class="header-right"> 已有账号？ <a href="https://passport.jd.com/new/login.aspx">请登录</a> </div>
+</div>
+<div class="content">
+  <div class="content-left">
+  <form action="" id="register-form" method="post">
+    <div class="user" id="user-name">
+      <label>用 户 名</label>
+      <input type="text" id="name-input" name="name-input"  required="required" maxlength="20" min="4" placeholder="你的账户名和登录密码" default="" />
+      <i class="i-status"></i> </div>
+    <div  class="prompt" id="name-pro" ><div id="name-pro-i" class="info" ></div><span></span></div>
+    
+    <div class="user" id="user-pwd">
+      <label>设置密码</label>
+      <input type="password" id="pwd-input" name="pwd-input" required="required" maxlength="20" min="4" placeholder="建议至少使用两种字符组合" />
+      <i class="i-status"></i> </div>
+    <div  class="prompt" id="pwd-pro"><div id="pwd-pro-i" class="info" ></div><span></span></div>
+    
+    <div class="user" id="user-confirm-pwd">
+      <label>确认密码</label>
+      <input type="password" id="confirm-pwd-input" name="confirm-pwd-input" required="required" maxlength="20" min="4" placeholder="再次输入密码" default="" />
+      <i class="i-status"></i> </div>
+    <div  class="prompt" id="confirm-pwd-pro"><div id="confirm-pwd-pro-i" class="info" ></div><span></span></div>
+    
+    <div class="user" id="eml-validation">
+      <label>邮箱验证</label>
+      <input type="email" id="eml-input" name="eml-input" required="required" maxlength="20" min="4" placeholder="建议使用常用邮箱" default="" />
+      <i class="i-status"></i> </div>
+    <div  class="prompt" id="eml-pro" ><div id="eml-pro-i" class="info" ></div><span></span> </div>
+    
+    <div class="user" id="tel">
+      <div class="phone-list">中国0086
+        <button id="show"></button>
+      </div>
+      <label></label>
+      <input type="tel" id="tel-input" name="tel-inpu" class="phone" required="required" maxlength="20" min="4" placeholder="建议使用常用手机" default="" />
+      <i class="i-status"></i> </div>
+    <div id="phone-select" class="phone-select" style="display:none" > </div>
+    <div class="prompt" id="tel-pro"><div id="tel-pro-i" class="info" ></div><span></span></div>
+    <div class="user">
+      <label>验 证 码</label>
+      <input type="text" id="code-input" name="code-input" required="required" maxlength="20" min="4" placeholder="请输入验证码" default="" />
+      <button id="code" class="code" onclick="code()"></button>
+    </div>
+    <div  class="prompt" id="code-pro"><i class=""></i></div>
+    <div class="user">
+      <label>手机验证码</label>
+      <input type="text" id="tel-validation-input" name="tel-validation-input" class="tel-validation-input" required="required" maxlength="20" min="4" placeholder="请输入手机验证码" default="" />
+      <button class="get-code" >获取验证码</button>
+    </div>
+    <div  class="prompt" ic="tel-validation-pro" ></div>
+    <br>
+    <div class="agreen">
+      <input type="checkbox" />
+      我已阅读并同意注册<a>《京东用户注册协议》</a></div>
+    <br>
+    <div class="div-register">
+      <button class="btn-register">立即注册</button>
+    </div>
+    </div>
+    <div class="content-right">
+    <div class="phone-img"></div>
+    <a class="company-register" href="https://reg.jd.com/reg/company">
+    <div class="company-img">
+      <div class="company-register-link"> 企业用户注册</div>
+    </div>
+    </a> <a class="international" href="https://reg.jd.com/reg/company">
+    <div class="international-img">
+      <div class="international-txt"> INTERNATIONAL
+        CUSTOMERS</div>
+    </div>
+    </a>
+  </form>
+</div>
+</div>
+<div class="footer">
+  <div class="link"> <a href="https://www.jd.com/intro/about.aspx">关于我们 | </a> <a href="https://www.jd.com/contact/">联系我们 | </a> <a href="https://zhaopin.jd.com/JD/web/index">人才招聘 | </a> <a href="http://sale.jd.com/act/wQTpIm7GnXE.html">商家入驻 | </a> <a href="" >广告服务 | </a> <a href="https://app.jd.com/">手机京东 | </a> <a href="https://club.jd.com/links.aspx">友情连接 | </a> <a href="https://media.jd.com/">销售联盟 | </a> <a href="http://sale.jd.com/act/n0hAvqy5CW8.html">京东社区 | </a> <a href="https://gongyi.jd.com/">京东公益 | </a> <a href="https://en.jd.com/">English Sit</a> </div>
+  <div class="copyright">Copyright©2004-2016  京东JD.com 版权所有</div>
+</div>
+<a class="questionnaire" href="https://surveys.jd.com/index.php?r=survey/index/sid/447941/lang/zh-Hans"></a>
+</div>
+
+</body>
+</html>

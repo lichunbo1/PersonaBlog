@@ -5,31 +5,34 @@ body{
 	}
 .bg{
 	width:1000px;
+	height: 1000px;
 	margin:0 auto;
 	background:#FFF url(../images/bg.png) no-repeat;
-	position:relative;
 	}
 .content{
-	width:1000px;
+	width:820px;
+	border: 1px solid #000000;
+	margin-top: 40px;
+	float:right;
 	}
 /*头部文字样式*/
-header{
+.header{
 	width:1000px;
 	margin-left:620px;
 	padding:50px 0 30px 0;
 	}
 /*头部文字动画*/
-header p{
+.header p{
 	margin-top:20px;
 	color:#FFF;
 	text-shadow: #000000 1px 1px 1px;
 	-webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s;
 	-webkit-transform: translate(-40px); -moz-transform: translate(-40px); -o-transform: translate(-40px); -ms-transform: translate(-40px); transform: translate(-40px);
 		  }
-header p:hover{  padding-left:20px;  }
-header p:nth-child(1){-webkit-animation:txtanimitions 3s ease-out 0s; -moz-animation:txtanimitions 3s ease-out 0s; -o-animation: txtanimitions 3s ease-out 0s; animation: txtanimitions 3s ease-out 0s;}
-header p:nth-child(2){-webkit-animation:txtanimitions 3s ease-out 3s; -moz-animation:txtanimitions 3s ease-out 3s; -o-animation: txtanimitions 3s ease-out 3s; animation: txtanimitions 3s ease-out 3s;}
-header p:nth-child(3){-webkit-animation:txtanimitions 3s ease-out 6s; -moz-animation:txtanimitions 3s ease-out 6s; -o-animation: txtanimitions 3s ease-out 6s; animation: txtanimitions 3s ease-out 6s;}
+.header p:hover{  padding-left:20px;  }
+.header p:nth-child(1){-webkit-animation:txtanimitions 3s ease-out 0s; -moz-animation:txtanimitions 3s ease-out 0s; -o-animation: txtanimitions 3s ease-out 0s; animation: txtanimitions 3s ease-out 0s;}
+.header p:nth-child(2){-webkit-animation:txtanimitions 3s ease-out 3s; -moz-animation:txtanimitions 3s ease-out 3s; -o-animation: txtanimitions 3s ease-out 3s; animation: txtanimitions 3s ease-out 3s;}
+.header p:nth-child(3){-webkit-animation:txtanimitions 3s ease-out 6s; -moz-animation:txtanimitions 3s ease-out 6s; -o-animation: txtanimitions 3s ease-out 6s; animation: txtanimitions 3s ease-out 6s;}
 
 @keyframes txtanimitions
 {
@@ -149,9 +152,8 @@ header p:nth-child(3){-webkit-animation:txtanimitions 3s ease-out 6s; -moz-anima
 	}
 /*左边导航栏样式*/
 .navbar{
-	position:absolute;
-	left:100px;
-	top:300px;
+	float: left;
+	margin-left: 100px;
 }
 .navbar li{
 	font-size:18px;

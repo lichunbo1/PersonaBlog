@@ -1,0 +1,30 @@
+
+/*时钟*/
+.time-div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #0000FF;
+    float:left;
+    margin-top: 200px;
+}
+/*关于我*/
+.about-me{
+    width: 818px;
+    height: 200px;
+    border: 1px solid #00CCFF;
+    margin-top: 20px;
+}
+/*慢生活*/
+.slow-life{
+    width: 818px;
+    height: 200px;
+    border: 1px solid #00CCFF;
+    margin-top: 20px;
+}
+/*学习历程*/
+.learning-experience{
+    width: 818px;
+    height: 200px;
+    border: 1px solid #00CCFF;
+    margin-top: 20px;
+}

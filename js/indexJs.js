@@ -10,5 +10,10 @@ var r=width/2;
 /*画表盘*/
 function draw(){
     ctx.save();
-    ctx.translate(r,r)
+    ctx.translate(r,r);
+    ctx.beginPath();
+    ctx.lineWidth=10;
+    ctx.arc(0,0,r-5,0,2*Math.PI,false);
+    ctx.stroke();
+
 }

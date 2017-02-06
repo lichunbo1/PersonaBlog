@@ -8,19 +8,20 @@
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 <link href="css/deleteStyle.css" rel="stylesheet"/>
 <link href="css/headerStyle.css" rel="stylesheet"/>
+<link href="css/contentStyle.css" rel="stylesheet"/>
 <script type="text/javascript" src="js/indexJs.js"></script>
 </head>
 
 <body>
 <div class="bg">
-    <header>
+    <div class="header">
         <h1><a href="#">Hello! 树先生</a></h1>
         <div>
         <p>趁我们还年</p>
         <p>多欣赏下沿途的风景</p>
         <p>不要错过了流年里温暖的人和物.....</p>
         </div>
-    </header>
+    </div>
     <!-- 顶部导航栏-->
     <div class="header-nav">
     <div class="time-bar"></div>
@@ -51,18 +52,38 @@
             <li><a href="#">关于我</a></li>
             <li><a href="#">慢生活</a></li>
             <li><a href="#">学习历程</a></li>
+            <li><a href="html\京东注册页\jd.html">作品链接</a></li>
         </ul>
     </div><!--navbar结束-->
     <!--content开始-->
     <div class="content">
-        <!--timediv开始-->
-        <div class="time-div" id="timeDiv">
-            <canvas id="clock" width="200" height="200">
+        <!--内容区-->
+        <!--about-me开始-->
+        <div class="about-me" id="aboutMe">
+            <h1>关于我</h1>
+        </div> <!--about-me结束-->
 
-            </canvas>
+        <!--slow-life开始-->
+        <div class="slow-life" id="slowLife">
+            <h1>慢生活</h1>
+        </div>   <!--slow-life结束-->
+
+        <!--Learning experience开始-->
+        <div class="learning-experience" id="learningExperience">
+            <h1>学习历程</h1>
+
         </div>
-        <!--timediv结束-->
+        <!--Learning experience结束-->
+
+
     </div><!--content结束-->
+    <!--timediv开始-->
+    <div class="time-div" id="timeDiv">
+        <canvas id="clock" width="200" height="200">
+        </canvas>
+    </div>
+    <!--timediv结束-->
 </div>
+
 </body>
 </html>
