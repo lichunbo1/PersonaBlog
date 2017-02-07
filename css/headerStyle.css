@@ -3,21 +3,17 @@
 body{
 	background:rgb(241,241,241);
 	}
-.bg{
+.background{
 	width:1000px;
-	height: 1000px;
+	height: auto;
 	margin:0 auto;
 	background:#FFF url(../images/bg.png) no-repeat;
+	position:relative;
 	}
-.content{
-	width:820px;
-	border: 1px solid #000000;
-	margin-top: 40px;
-	float:right;
-	}
+
 /*头部文字样式*/
 .header{
-	width:1000px;
+	width:300px;
 	margin-left:620px;
 	padding:50px 0 30px 0;
 	}
@@ -100,9 +96,8 @@ body{
 /*时间轴样式*/
 .header-nav{
 	width:830px;
-	margin-left:170px;
 	margin-top:50px;
-	float:left;
+	float:right;
 	position:relative;
 	}
 .time-bar{
