@@ -1,63 +1,94 @@
 .content{
     width:800px;
-    border: 1px solid #000000;
     margin-top: 100px;
     margin-left:197px;
-
 }
 /*时钟*/
-.time-div{
-    height: 100px;
-    width: 100px;
-    border: 1px solid #0000FF;
-    margin-top: 200px;
-}
-/*音乐播放器 */
-.music{
+.time{
     position: absolute;
-    height: 250px;
-    width: 190px;
-    border: 1px solid #0000FF;
+    width: 192px;
     top: 600px;
-
-
 }
-.music-name{
-    width:190px;
-    height: 40px;
-    border:1px solid #00CCFF;
-}
-.music .btn{
+.graduate{
     width: 190px;
-    height: 50px;
-    border:1px solid #2a6496;
-    margin-top: 5px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
 }
-.music .music-world{
-    width: 190px;
-    height: 100px;
-    border:1px solid #4cae4c;
+.graduate input{
+    width: 100px;
     margin-top: 5px;
+    text-align: center;
+}
+.content h3{
+    background: url(../images/blogli.png) left center no-repeat;
+    padding-left: 50px;
+    line-height: 25px;
+}
+.content p{
+    margin-top: 20px;
 }
 /*关于我*/
 .about-me{
-    width: 800px;
+    width:783px;
+    border-right: 1px solid #00CCFF;
     height: 200px;
-    border: 1px solid #00CCFF;
-    margin-top: 20px;
     overflow: hidden;
+    padding: 10px;
+    background:rgb(241,241,241);
 }
 /*慢生活*/
 .slow-life{
-    width: 800px;
+    width: 783px;
     height: 200px;
-    border: 1px solid #00CCFF;
+    margin-top: 20px;
+    border-right: 1px solid #00CCFF;
     overflow: hidden;
+    padding: 10px;
+    background:rgb(241,241,241);
 }
 /*学习历程*/
 .learning-experience{
-    width: 800px;
+    width: 783px;
     height: 200px;
-    border: 1px solid #00CCFF;
+    margin-top: 20px;
+    border-right: 1px solid #00CCFF;
     overflow: hidden;
+    padding: 10px;
+    background:rgb(241,241,241);
+}
+
+/*底部*/
+.bottom{
+    margin-top: 50px;
+    height: 70px;
+    width: 1000px;
+    border-top: 1px solid #888888;
+    background:rgb(241,241,241);
+    text-align: center;
+
+}
+.bottom .list-div{
+    width: 340px;
+    height: auto;
+    margin: auto;
+}
+.bottom .list-div ul li{
+    float: left;
+    margin-top: 10px;
+    border-right: 1px solid #9F9FFF;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bottom .list-div ul li a{
+    color: #696969;
+}
+.bottom .list-div ul li a:hover{
+    color: #222222;
+}
+.bottom .copyright{
+    width:130px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 14px;
 }

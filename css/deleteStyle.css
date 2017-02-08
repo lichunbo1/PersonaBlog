@@ -7,5 +7,5 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
         ul, ol { list-style:none; }
         a { text-decoration:none; }
         a:hover { text-decoration:underline; }
-        button, input, select, textarea { font-size:100%; } table { border-collapse:collapse; border-spacing:0; } 
+        button, input, select, textarea { font-size:100%; } table { border-collapse:collapse; border-spacing:0; }
 

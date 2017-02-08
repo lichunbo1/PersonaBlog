@@ -9,7 +9,7 @@
 <link href="css/deleteStyle.css" rel="stylesheet"/>
 <link href="css/headerStyle.css" rel="stylesheet"/>
 <link href="css/contentStyle.css" rel="stylesheet"/>
-<script type="text/javascript" src="js/indexJs.js"></script>
+
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <div class="header">
         <h1><a href="#">Hello! 树先生</a></h1>
         <div>
-        <p>趁我们还年</p>
+        <p>趁我们还年轻</p>
         <p>多欣赏下沿途的风景</p>
         <p>不要错过了流年里温暖的人和物.....</p>
         </div>
@@ -52,34 +52,36 @@
             <li><a href="#aboutMea">关于我</a></li>
             <li><a href="#slowLife">慢生活</a></li>
             <li><a href="#learningExperience">学习历程</a></li>
-            <li><a href="html\京东注册页\jd.html">作品链接</a></li>
+            <li><a href="#bottom">Demo链接</a></li>
         </ul>
     </div><!--navbar结束-->
-    
+
     <!--content开始-->
     <div class="content">
         <!--内容区-->
         <!--about-me开始-->
         <div class="about-me" id="aboutMe">
-            <h1>关于我</h1>
-            <p></p>
+            <h3>关于我</h3>
+            <p>你好吗</p>
         </div> <!--about-me结束-->
 
         <!--slow-life开始-->
         <div class="slow-life" id="slowLife">
-           <h1>慢生活</h1>
+           <h3>慢生活</h3>
+            <p>你好吗</p>
         </div>   <!--slow-life结束-->
 
         <!--Learning experience开始-->
         <div class="learning-experience" id="learningExperience">
-            <h1>学习历程</h1>
+            <h3>学习历程</h3>
+            <p>你好吗？</p>
         </div> <!--Learning experience结束-->
 
     </div><!--content结束-->
 
     <!--music开始-->
-    <div class="music">
-        <audio src="music\绅士.mp3" >
+    <!--<div class="music">
+        <audio src="music\绅士.mp3"  >
 
         </audio>
         <div class="music-name"></div>
@@ -87,7 +89,40 @@
         <div class="music-world"></div>
 
     </div> <!--music结束-->
+    <!--time开始-->
+    <div class="time">
+        <canvas id="clock" width="190" height="190"></canvas>
+        <div class="graduate" id="graduate">
+            <h2>毕业倒计时</h2>
+            <form>
+                <input type="text" readonly><label>年</label></br>
+               <input type="text" readonly><label>月</label></br>
+                <input type="text" readonly><label>日</label></br>
+                <input type="text" readonly><label>时</label></br>
+                <input type="text" readonly><label>分</label></br>
+                <input type="text" readonly><label>秒</label></br>
+            </form>
+
+        </div>
+    </div> <!--time结束-->
+
+    <!--bottom开始-->
+    <div class="bottom" id="bottom">
+        <div class="list-div">
+        <ul>
+            <li><a href="html/京东注册页/jd.html">京东注册页</a></li>
+            <li><a href="https://lichunbo1.github.io/WebPage/">慕课网页布局</a></li>
+            <li><a href="html/计算器.html">JS简易计算器</a></li>
+        </ul>
+        </div>
+        <div class="copyright">
+            <label>lichunbo@版权所有</label>
+        </div>
+    </div><!--bottom结束-->
 
 </div>
+<script type="text/javascript" src="js/indexJs.js"></script>
+<script type="text/javascript" src="js/timeJs.js"></script>
+<script type="text/javascript" src="js/timeJs.js"></script>
 </body>
 </html>

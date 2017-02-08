@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>JavaScript计算器</title>
+<style type="text/css">
+.content{
+
+		width:600px;
+		margin:auto;
+	}
+.result{
+		font-size:16px;
+		line-height:50px;
+		width:100%;
+		height:50px;
+		border:1px solid #666666;
+	}
+button{
+		width:90px;
+		height:45px;
+		border:none;
+		border-radius:5px;
+		background-color:#00CCFF;
+		font-size:24px;
+		box-shadow: 0 0 2px 2px #6b7; 
+	}
+button:hover{
+		background-color:#0099FF;
+		}
+.title{
+		text-align:center;
+	}
+.zero{
+		width:183px;
+	}
+.equal{
+		height:93px;
+	}
+</style>
+</head>
+
+<body>
+<div class="content">
+		<table>
+			<tr>
+				<td colspan="5"><div class="title"><h3>javascripts练习-简易计算器</h3></div></td>
+			</tr>
+			<tr>
+				<td colspan="5"><div class="result" id="result"></div></td>			
+			</tr>
+			<tr>
+				<td><button value="7">7</button></td>
+				<td><button value="8">8</button></td>
+				<td><button value="9">9</button></td>
+				<td><button value="/">/</button></td>
+				<td><button value="%">%</button></td>			
+			</tr>
+			<tr>
+				<td><button value="4">4</button></td>
+				<td><button value="5">5</button></td>
+				<td><button value="6">6</button></td>
+				<td><button value="*">*</button></td>
+				<td><button value="C">C</button></td>			
+			</tr>
+			<tr>
+				<td><button value="1">1</button></td>
+				<td><button value="2">2</button></td>
+				<td><button value="3">3</button></td>
+				<td><button value="-">-</button></td>
+				<td rowspan="2" ><button class="equal" value="=">=</button></td>			
+			</tr>
+			<tr>
+				<td colspan="2" ><button class="zero" value="0">0</button></td>
+				<td><button value=".">.</button></td>
+				<td><button value="+">+</button></td>
+						
+			</tr>
+		</table>
+	</div>
+<script type="text/javascript">
+   
+	var re=document.getElementById("result");
+	var buffer="";
+	var btns=document.getElementsByTagName("button");
+			for(var i=0;i<btns.length;i++)
+			{
+				btns.item(i).addEventListener("click",btnHandler,true);
+			}
+	
+	function btnHandler()
+	{
+			
+			switch(this.value){
+				case 'C':re.innerHTML="";
+				buffer="";
+				break;
+				case '=':re.innerHTML=getResult();
+				break;
+				case '0':
+					if(buffer!="")
+					{
+						buffer+=this.value;
+						re.innerHTML=""+buffer;
+						}
+					break;
+				case '+':
+				case '-':
+				case '*':
+				case '/':
+				case '%':
+					if(!isNaN(eval(buffer))){
+						buffer+=this.value;
+						re.innerHTML=""+buffer;
+					}
+						break;
+				default:
+					buffer+=this.value;
+					re.innerHTML=""+buffer;
+					break;
+						}
+	function getResult(){
+		var result=buffer+"="+eval(buffer);
+		return result;
+		}
+	}
+</script>
+</body>
+</html>
